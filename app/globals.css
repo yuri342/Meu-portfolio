@@ -1,16 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: rgb(0, 0, 0);
   --foreground: #171717;
 }
 
-@theme inline {
+
+.playfair-display-900 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+/* @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-raleway);
   --font-mono: var(--font-geist-mono);
-}
+} */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -23,4 +32,24 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+  background: #000000;
+  background: linear-gradient(
+    145deg,
+    rgb(12, 12, 12) 35%,
+    rgb(64, 64, 64) 78%
+  );
+}
+
+/* header {} */
+
+button {
+  color: white;
+}
+
+/* BT SHINE */
+.btn-shine {
+  color: rgb(133, 133, 133);
 }
