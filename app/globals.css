@@ -29,27 +29,123 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #000000;
+  background: linear-gradient(
+    145deg,
+    rgb(12, 12, 12) 30%,
+    rgb(64, 64, 64) 100%
+  );
 }
 
 main {
   background: #000000;
   background: linear-gradient(
     145deg,
-    rgb(12, 12, 12) 35%,
-    rgb(64, 64, 64) 78%
+    rgb(12, 12, 12) 30%,
+    rgb(64, 64, 64) 100%
   );
 }
 
 /* header {} */
 
-button {
-  color: white;
+/* Title */
+
+
+/* The typing effect */
+
+.typewriter h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0;
+  animation: fadeIn-slideUp 1s ease-in, typing 2s steps(30, end), blink-caret 0.5s step-end infinite;
 }
 
-/* BT SHINE */
+.lines {
+  width: 100px;
+  height: 1px;
+  background-color: white;
+  animation: borderload 1s ease-in forwards;
+}
+
+@keyframes borderload {
+  from { width: 0px; }
+  to { width: 100px; }
+}
+
+@media (max-width: 767px) {
+  .lines {
+    animation-name: borderload-mobile;
+  }
+}
+
+@keyframes borderload-mobile {
+  from { width: 0px; }
+  to { width: 50px; }
+}
+
+
+.title h1 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+}
+
+.title h3 {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  animation: fadeIn-slideUp 1s ease-in;
+}
+
+@keyframes fadeIn-slideUp {
+  from {
+     opacity: 0;
+     transform: translateY(10px);
+   }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+.title{
+  color: rgb(218, 218, 218);
+  cursor: none;
+}
+
+/* BTN SHINE */
+
 .btn-shine {
+  box-sizing: border-box;
   color: rgb(133, 133, 133);
+  font-size: clamp(0.75rem, 2vw + 0.5rem, 1rem);
+  padding: clamp(0.3rem, 1vw, 0.5rem) clamp(0.4rem, 1.5vw, 0.75rem);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid transparent;
+}
+
+/* Hover só em dispositivos que realmente suportam hover (mouse) */
+@media (hover: hover) {
+  .btn-shine:hover {
+    position: static;
+    transition: all 0.3s ease-in-out;
+    color: rgb(248, 247, 247);
+    text-shadow: 0px 0px 10px rgb(218, 218, 218);
+    cursor: pointer;
+    border: 0.1px solid rgb(252, 250, 250);
+    border-radius: 0.5rem;  
+}
+}
+
+/* Feedback ao toque no mobile */
+.btn-shine:active {
+  transition: all 1ms ease-in-out;
+  position: static;
+  color: rgb(248, 247, 247);
+  text-shadow: 0px 0px 8px rgb(218, 218, 218);
+  border: 0.1px solid rgb(252, 250, 250);
+  border-radius: 0.5rem;  
+}
+
+/* Ajustes finos pra telas pequenas */
+@media (max-width: 640px) {
+  .btn-shine {
+    font-size: 0.860rem;
+    padding: 0.4rem 0.5rem;
+  }
 }
