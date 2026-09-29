@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+.carrousel {
+  --sb-size: 4px;
+  --sb-track-color: #bdbdbd00;
+  --sb-thumb-color: gradient(to right, #ff0000, #00ff00);
+}
+
+.carrousel::-webkit-scrollbar {
+  width: var(--sb-size);
+  height: var(--sb-size);
+}
+
+.carrousel::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 0px;
+}
+
+.carrousel::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 1px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .carrousel {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}

@@ -29,21 +29,23 @@
 }
 
 body {
-  background: #000000;
-  background: linear-gradient(
-    145deg,
-    rgb(12, 12, 12) 30%,
-    rgb(64, 64, 64) 100%
-  );
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
 }
 
 main {
+  width: 100%;
+  height: 100dvh;
   background: #000000;
   background: linear-gradient(
     145deg,
     rgb(12, 12, 12) 30%,
     rgb(64, 64, 64) 100%
   );
+
 }
 
 /* header {} */
@@ -62,15 +64,15 @@ main {
 }
 
 .lines {
-  width: 100px;
+  width: 5dvw;
   height: 1px;
-  background-color: white;
+  background-color: #acaba8;
   animation: borderload 1s ease-in forwards;
 }
 
 @keyframes borderload {
-  from { width: 0px; }
-  to { width: 100px; }
+  from { width: 0; }
+  to { width: 3dvw; }
 }
 
 @media (max-width: 767px) {
@@ -104,7 +106,7 @@ main {
 
 
 .title{
-  color: rgb(218, 218, 218);
+  color: #aca8a8;
   cursor: none;
 }
 
@@ -145,7 +147,14 @@ main {
 /* Ajustes finos pra telas pequenas */
 @media (max-width: 640px) {
   .btn-shine {
-    font-size: 0.860rem;
+    font-size: 0.832rem;
+    padding: 0.4rem 0.5rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .btn-shine {
+    font-size: 0.830rem;
     padding: 0.4rem 0.5rem;
   }
 }
