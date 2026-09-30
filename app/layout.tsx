@@ -29,9 +29,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${kronaOne.variable} ${raleway.variable} ${playfairDisplay.variable} h-full antialiased`}
+      className={`${kronaOne.variable} ${raleway.variable} ${playfairDisplay.variable} antialiased`}
     >
-      <body className="h-full flex flex-col">{children}</body>
+      <body className="">{children}</body>
     </html>
   ); 
 }
