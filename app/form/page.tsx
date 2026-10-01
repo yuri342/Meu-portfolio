@@ -24,10 +24,10 @@ export default function ContactForm() {
         const newErrors: FormErrors = {};
 
         const name = String(data.get("entry.207167730") || "").trim();
-        const email = String(data.get("entry.540822482") || "").trim();
-        const whatsapp = String(data.get("entry.605193171") || "").trim();
+        const email = String(data.get("entry.605193171") || "").trim();
+        const whatsapp = String(data.get("entry.1444417084") || "").trim();
         const company = String(data.get("entry.838022859") || "").trim();
-        const project = String(data.get("entry.1444417084") || "").trim();
+        const project = String(data.get("entry.540822482") || "").trim();
         const service = String(data.get("entry.1108434416") || "").trim();
 
         // Nome
@@ -172,7 +172,7 @@ export default function ContactForm() {
                     {/* EMAIL */}
                     <div>
                         <input
-                            name="entry.540822482"
+                            name="entry.605193171"
                             type="email"
                             placeholder="Seu email"
                             autoComplete="email"
@@ -194,7 +194,7 @@ export default function ContactForm() {
                     {/* WHATSAPP */}
                     <div>
                         <input
-                            name="entry.605193171"
+                            name="entry.1444417084"
                             type="tel"
                             autoComplete="tel"
                             inputMode="tel"
@@ -276,7 +276,7 @@ export default function ContactForm() {
                     {/* PROJETO */}
                     <div>
                         <textarea
-                            name="entry.1444417084"
+                            name="entry.540822482"
                             placeholder="Conte um pouco sobre o seu projeto..."
                             rows={5}
                             maxLength={2000}
