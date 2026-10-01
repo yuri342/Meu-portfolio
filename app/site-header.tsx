@@ -37,6 +37,13 @@ export default function SiteHeader() {
         });
     }
 
+    function irParaExemplos() {
+        document.getElementById("contato")?.scrollIntoView({
+            behavior: "smooth", 
+            block: "start",
+        });
+    }
+
   return (
     <header
       className={`sticky top-0 z-50 min-h-[10dvh] flex flex-col flex-nowrap md:grid md:grid-cols-3 items-center gap-6 md:gap-0 p-6 md:p-10 transition-all duration-300 ease-in-out ${
@@ -49,7 +56,7 @@ export default function SiteHeader() {
         <ul className="flex flex-nowrap gap-3 list-none raleway text-lg justify-center md:gap-5">
           <li><button className="btn-shine" onClick={() => {irParaServiços()}}>Serviços</button></li>
           <li><button className="btn-shine" onClick={() => {irParaAbout()}}>Sobre</button></li>
-          <li><button className="btn-shine" onClick={() => {}}>Exemplos</button></li>
+          <li><button className="btn-shine" onClick={() => {irParaExemplos()}}>Exemplos</button></li>
           <li><button className="btn-shine" onClick={() => {irParaContato()}}>Contato</button></li>
         </ul>
       </nav>

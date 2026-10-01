@@ -122,7 +122,23 @@ export default function Creator() {
                                 className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                             />
                         </a>
+                        
 
+                        <a
+                            href="/Projects_Examples"
+                            className="group flex items-center gap-2 border border-[#333333] rounded-full px-4 py-2 text-[#888888] transition-all duration-300 hover:border-[#666666] hover:text-white"
+                        >
+                            <Code2 size={16} strokeWidth={1.5} />
+
+                            <span className="text-sm">
+                                Portfólio
+                            </span>
+
+                            <ArrowUpRight
+                                size={14}
+                                className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                            />
+                        </a>
                     </div>
 
                 </div>
@@ -205,7 +221,7 @@ export default function Creator() {
 
 
                     {/* PROJECTS */}
-                    <div className="group relative border border-[#333333] rounded-2xl p-[5dvw] sm:p-[2.5dvw] transition-all duration-500 hover:border-[#666666]">
+                    <div onClick={() => window.location.href = "/Projects_Examples"} className=" cursor-pointer group relative border border-[#333333] rounded-2xl p-[5dvw] sm:p-[2.5dvw] transition-all duration-500 hover:border-[#666666]">
 
                         <div className="flex items-start justify-between gap-6">
 
@@ -216,7 +232,7 @@ export default function Creator() {
                                 </span>
 
                                 <h3 className="text-[6dvw] sm:text-[3.5dvw] lg:text-[2.2vw] font-medium tracking-[-0.04em]">
-                                    Construído na prática.
+                                     Construído na prática.
                                 </h3>
 
                                 <p className="mt-4 max-w-[650px] text-[3.7dvw] sm:text-[1.8vw] lg:text-[1vw] leading-[1.7] text-[#777777]">
