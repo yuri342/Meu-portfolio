@@ -45,7 +45,7 @@ export default function About() {
 
                         A{" "}
 
-                        <strong className="text-white">
+                        <strong className="playfair-display-900-italic">
                             You Make
                         </strong>{" "}
 

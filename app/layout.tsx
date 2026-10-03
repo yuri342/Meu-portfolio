@@ -5,7 +5,8 @@ import "./globals.css";
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ["latin"],
-  weight: ["400", "900"],
+  weight: ["400", "900", "500", "600", "700", "800"],
+  style: ["normal", "italic"]
 });
 
 const raleway = Raleway({

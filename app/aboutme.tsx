@@ -39,7 +39,7 @@ export default function Creator() {
 
                         <br />
 
-                        <span className="playfair-display-900 text-[#777777]">
+                        <span className="playfair-display-900-italic text-[#777777]">
                             You Make.
                         </span>
 
@@ -300,7 +300,7 @@ export default function Creator() {
 
                         </div>
 
-                        <p className="playfair-display-900 text-[5dvw] sm:text-[3vw] lg:text-[2vw] leading-[1.1] text-[#777777]">
+                        <p className="playfair-display-900-italic text-[5dvw] sm:text-[3vw] lg:text-[2vw] leading-[1.1] text-[#777777]">
 
                             Aprender construindo.
                             <br />

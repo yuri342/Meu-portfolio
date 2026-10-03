@@ -64,7 +64,7 @@ export default function SiteHeader() {
       <span className="md:justify-self-center flex items-center gap-2 md:gap-4 title">
         <div className="lines" />
         <div className="flex flex-col items-center typewriter">
-          <h1 className="text-3xl md:text-4xl playfair-display-900 text-white">YouMake</h1>
+          <h1 className="text-3xl md:text-4xl playfair-display-900-italic text-white">YouMake</h1>
           <h3 className="text-xl md:text-2xl raleway text-white">I Create</h3>
         </div>
         <div className="lines" />
